@@ -20,6 +20,7 @@
 
 ## To start with Lab1:
 
+```
 $ mkdir work
 $ cd work
 
@@ -36,7 +37,7 @@ $ cd ../mag
 $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magicrc
 $ cd ../netgen
 $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
-
+```
 ![image](https://user-images.githubusercontent.com/38167491/218320019-16f5b24c-fdb5-4c09-90e6-b81ca9f13c46.png)
 
 
