@@ -67,7 +67,7 @@ value="
 .save all
 "
 ```
-Once we simulate the above, we get plot as shown in below snap,
+Once we simulate the netlist from above schematic created, we get the voltage-transfer characteristic(VTC) for the inverter as shown in below snap,
 <img width="923" alt="image" src="https://user-images.githubusercontent.com/38167491/218334080-c5d131e6-8f76-42fc-8d6f-01812ac8d60b.png">
 
 
