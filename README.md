@@ -54,6 +54,25 @@ Now need to add testbench for simulation of below inverter along with Voltage so
 <img width="779" alt="image" src="https://user-images.githubusercontent.com/38167491/218333066-73c46e40-d8fe-4a18-943b-e20b2e8ef82e.png">
 
 
+Pre-layout Simulation using Xschem and Ngspice::
+
+Here we do DC analysis of the inverter schematic we created by giving below lines of code in the "code_shown.sym" from the components tab,
+```
+name=SPICE only_toplevel=false 
+value="
+.lib /home/paavani/vsdflow/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.dc Vin 0 1.8 0.01
+.save all
+"
+```
+Once we simulate the above, we get plot as shown in below snap,
+<img width="923" alt="image" src="https://user-images.githubusercontent.com/38167491/218334080-c5d131e6-8f76-42fc-8d6f-01812ac8d60b.png">
+
+
+
+
 
  	 
 
