@@ -18,7 +18,7 @@
 
 
 
-##To start with Lab1:
+## To start with Lab1:
 
 $ mkdir work
 $ cd work
