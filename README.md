@@ -106,6 +106,17 @@ value="
 ```
 <img width="922" alt="image" src="https://user-images.githubusercontent.com/38167491/218336235-f95a0d3e-ab06-4d03-8001-cc88201938f8.png">
 
+## The timing parameters are calculated as
+*Rise time = time(@80 % of Vout) - time(@20% of Vout)* => 6.61577e-09 - 6.54225e-09 = 0.07352e-09
+*Fall time = time(@20 % of Vout) - time(@80% of Vout)* => 1.53209e-09 - 1.47056e-09 = 0.06153e-09
+*Cell Rise Delay =time taken by output to rise to its 50% value - time taken by the input to fall to its 50% value* => 6.5812e-09 - 6.50256e-09 = 0.07864e-09
+*Cell Fall Delay =time taken by output to fall to its 50% value - time taken by the input to rise to its 50% value* => 1.50409e-09 - 1.50003e-09 = 0.00406e-09
+
+
+
+#Creating inverter layout in Magic and exporting its netlist:
+
+
 
 
 
