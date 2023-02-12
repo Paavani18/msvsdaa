@@ -59,11 +59,12 @@ Pre-layout Simulation using Xschem and Ngspice::
 ## DC Analysis:
 Here we do DC analysis of the inverter schematic we created by giving below lines of code in the "code_shown.sym" from the components tab,
 ```
+#TT_models:
 name=SPICE only_toplevel=false 
 value="
 .lib /home/paavani/vsdflow/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-
+#DC_analysis:
 .dc Vin 0 1.8 0.01
 .save all
 "
@@ -75,18 +76,35 @@ Once we simulate the netlist from above schematic created, we get the voltage-tr
 ## Transient Analysis:
 
 Similar to above analysis, here we do tran analysis using below lines of code,
+
+*Example 1*:
 ```
+#TT_models:
 name=SPICE_tran only_toplevel=false 
 value="
 .lib /home/paavani/vsdflow/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-
+#Simulation_analysis:
 .tran 0.01n 60n
 .save all
 "
 ```
-<img width="923" alt="image" src="https://user-images.githubusercontent.com/38167491/218335609-fc045600-8455-4514-8718-8dbdec9629ed.png">
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/38167491/218336392-4e70d11b-dceb-4989-81f5-fcadc2cefd50.png">
 
+
+*Example 2*:
+```
+#TT_models:
+name=SPICE_tran only_toplevel=false 
+value="
+.lib /home/paavani/vsdflow/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+#Simulation_analysis:
+.tran 1n 1u
+.save all
+"
+```
+<img width="922" alt="image" src="https://user-images.githubusercontent.com/38167491/218336235-f95a0d3e-ab06-4d03-8001-cc88201938f8.png">
 
 
 
