@@ -56,6 +56,7 @@ Now need to add testbench for simulation of below inverter along with Voltage so
 
 Pre-layout Simulation using Xschem and Ngspice::
 
+## DC Analysis:
 Here we do DC analysis of the inverter schematic we created by giving below lines of code in the "code_shown.sym" from the components tab,
 ```
 name=SPICE only_toplevel=false 
@@ -69,6 +70,24 @@ value="
 ```
 Once we simulate the netlist from above schematic created, we get the voltage-transfer characteristic(VTC) for the inverter as shown in below snap,
 <img width="923" alt="image" src="https://user-images.githubusercontent.com/38167491/218334080-c5d131e6-8f76-42fc-8d6f-01812ac8d60b.png">
+
+
+## Transient Analysis:
+
+Similar to above analysis, here we do tran analysis using below lines of code,
+```
+name=SPICE_tran only_toplevel=false 
+value="
+.lib /home/paavani/vsdflow/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 60n
+.save all
+"
+```
+<img width="923" alt="image" src="https://user-images.githubusercontent.com/38167491/218335609-fc045600-8455-4514-8718-8dbdec9629ed.png">
+
+
 
 
 
