@@ -38,6 +38,23 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magicrc
 $ cd ../netgen
 $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ```
+
+This is the schematic of inverter which we can create using the Tools > Insert Symbol > select <home_dir>/pdk/sky130A/libs.tech/xschem > sky130_fd_pr > from the drop down options, can select necessary cells and use to generate the required schematic as below (here we generated a FinFet Inverter) - 
 ![image](https://user-images.githubusercontent.com/38167491/218320019-16f5b24c-fdb5-4c09-90e6-b81ca9f13c46.png)
+
+After creating the schematic, manually created below symbol for Inverter - 
+![image](https://user-images.githubusercontent.com/38167491/218323982-9282dcaa-49ed-4581-8d6b-3f223413e523.png)
+
+After creating the schematic, got to:: Symbol > Make symbol from schematic  --> below symbol in generated.
+![image](https://user-images.githubusercontent.com/38167491/218323990-b0afba69-54dd-4208-9c0e-563723b2cd9b.png)
+
+ 	 
+ 	 
+
+
+
+ 	 
+ 	 
+
 
 
