@@ -48,7 +48,9 @@ After creating the schematic, manually created below symbol for Inverter -
 After creating the schematic, got to:: Symbol > Make symbol from schematic  --> below symbol in generated.
 ![image](https://user-images.githubusercontent.com/38167491/218323990-b0afba69-54dd-4208-9c0e-563723b2cd9b.png)
 
- 	 
+Now need to add testbench for simulation of below inverter along with Voltage sources,
+![image](https://user-images.githubusercontent.com/38167491/218328083-35a1a116-698a-48ed-8620-e636a7ef6eba.png)
+
  	 
 
 
