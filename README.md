@@ -51,6 +51,9 @@ After creating the schematic, got to:: Symbol > Make symbol from schematic  --> 
 Now need to add testbench for simulation of below inverter along with Voltage sources,
 ![image](https://user-images.githubusercontent.com/38167491/218333014-b702f0b1-1592-4b84-9b3d-8ea8faa60e89.png)
 
+<img width="779" alt="image" src="https://user-images.githubusercontent.com/38167491/218333066-73c46e40-d8fe-4a18-943b-e20b2e8ef82e.png">
+
+
 
  	 
 
