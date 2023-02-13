@@ -116,7 +116,13 @@ value="
 *Cell Fall Delay =time taken by output to fall to its 50% value - time taken by the input to rise to its 50% value* => 1.50409e-09 - 1.50003e-09 = 0.00406e-09
 
 
-#Creating inverter layout in Magic and exporting its netlist:
+# Creating inverter layout in Magic and exporting its netlist:
+Reference : https://github.com/nickson-jose/vsdstdcelldesign#standard-cell-layout-design-in-magic
+
+```
+magic -T ../open_pdks/sky130/magic/sky130.tech
+
+```
 
 
 
