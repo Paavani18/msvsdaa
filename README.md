@@ -153,11 +153,10 @@ ext2spice
 This is the layout - Inverter - manually created using MAGIC:
 <img width="904" alt="image" src="https://user-images.githubusercontent.com/38167491/218493953-51b213bc-3e9b-4710-935c-5c03ede0ae20.png">
 
-
-.ext file extracted is,
+.ext file extracted is, 
 <img width="850" alt="image" src="https://user-images.githubusercontent.com/38167491/218500185-d36cee8d-c0d3-4fb4-a097-7b3b14b37552.png">
 
-.spice file extracted is,
+.spice file extracted is, 
 <img width="599" alt="image" src="https://user-images.githubusercontent.com/38167491/218500384-5a705e01-88d9-4db6-91bb-7d1e6b455027.png">
 
 
