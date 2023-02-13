@@ -120,10 +120,38 @@ value="
 Reference : https://github.com/nickson-jose/vsdstdcelldesign#standard-cell-layout-design-in-magic
 
 ```
-magic -T ../open_pdks/sky130/magic/sky130.tech
+magic -T ../open_pdks/sky130/magic/sky130.tech &
+
+grid 0.05um 0.05um
+grid
+snap user
+select area
+box
+
+<Now start drawing the layout keeping in mind appropriate scale and dimensions to avoid DRC
+** Below are few commands I used for creating the below layout::
+paint poly, paint ndiff, paint li, paint psd, paint psc, paint pc, paint m1, paint mcon
+drc why
+erase poly, ....
+copy n 30
+move n 1
+
+label Vin w
+port make 1
+Once done, continue as below>
+
+save inverter_manual
+
+**To extract spice netlist from layout:
+extract do local
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
 
 ```
 
+This is the layout - Inverter - manually created using MAGIC:
+<img width="904" alt="image" src="https://user-images.githubusercontent.com/38167491/218493953-51b213bc-3e9b-4710-935c-5c03ede0ae20.png">
 
 
 
